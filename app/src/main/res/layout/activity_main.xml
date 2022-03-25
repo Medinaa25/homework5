@@ -30,57 +30,73 @@
         android:text="Trivia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
-    
-   <Button
-       android:background="@drawable/button"
-       android:backgroundTint="@color/white"
-       android:id="@+id/button"
-       android:layout_marginHorizontal="20dp"
-       android:layout_marginBottom="110dp"
-       android:textSize="30sp"
-       android:textColor="@color/black"
-       android:text="NEXT"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"/>
 
 
+    <Button
+       android:drawableStart="@drawable/ic_arrow_left"
+        android:backgroundTint="@color/green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:paddingVertical="10dp"
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:paddingStart="48dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/white"
+        android:drawableEnd="@drawable/ic_arrow_right"
+        android:paddingEnd="15dp"
+        android:text="NEXT"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="24dp" />
 
     <EditText
-        android:background="@color/white"
+        android:paddingVertical="4dp"
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginTop="100dp"
+        android:background="#C5E676"
         android:hint="Username"
-        android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@id/email"
+        android:paddingStart="8dp"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="@id/email"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/email" />
 
     <EditText
+        android:paddingVertical="4dp"
+        android:background="#C5E676"
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="5dp"
         android:hint="Email"
-        android:textSize="25sp"
+        android:textSize="35sp"
+        app:layout_constraintTop_toBottomOf="@id/editText"
         app:layout_constraintBottom_toTopOf="@id/password"
         app:layout_constraintEnd_toEndOf="@id/password"
         app:layout_constraintStart_toStartOf="@id/password" />
 
     <EditText
+        android:paddingVertical="4dp"
+        android:background="#C5E676"
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="38dp"
         android:hint="Password"
-        android:textSize="25sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintEnd_toEndOf="@id/button"
         app:layout_constraintHorizontal_bias="0.0"
